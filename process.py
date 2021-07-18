@@ -5,8 +5,8 @@ from flask import render_template
 
 
 class Spotify_API:
-    CLIENT_ID = '8d037b29ab904921973f4dd6c11a1c97'
-    CLIENT_SECRET = '33eee73cc11b4c148d325361245f74c7'
+    CLIENT_ID = 'Client_Id'
+    CLIENT_SECRET = 'Client_Secret'
     ACCESS_TOKEN: str
     id_secret_base64: str
     client_credentials_url = 'https://accounts.spotify.com/api/token'
