@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <h2>Album of the day</h2>
+            <p><b><i>Album name:</i></b> {{ album['name'] }}</p>
+            <p><b><i>Artist(s):</i></b> {{ album_artists }}</p>
+
+            <a href={{ album['external_urls']['spotify'] }} title="Open in Spotify">
+                <img src={{ album['images'][1]['url'] }} alt="Album Cover"
+                    width={{ album['images'][1]['width'] }} height={{ album['images'][1]['height'] }}>
+            </a>
+        </div>
+        <div class="column">
+            <h2>Track of the day</h2>
+            <p><b><i>Track name:</i></b> {{ track['name'] }}</p>
+            <p><b><i>Artist(s):</i></b> {{ track_artists }}</p>
+
+            <table cellpadding="4">
+                <tr>
+                    <td>
+                        <a href={{ track['external_urls']['spotify'] }} title="Open in Spotify">
+                            <img src={{ track['album']['images'][2]['url'] }} alt="Single Cover"
+                                width={{ track['album']['images'][2]['width'] }}
+                                height={{ track['album']['images'][2]['height'] }}
+                                align="top">
+                        </a>
+                    </td>
+                    <td>
+                        <span style="white-space: pre-line">{{ track_features }}</span>
+                    </td>
+                </tr>
+            </table>
+
+            <div>
+                <form action="/process">
+                    <button class="button">Try again</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    .column {
+        float: left;
+        width: 50%;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .button {
+        align-self: center;
+        padding: 7px;
+        font-size: large;
+        margin-top: 190px;
+    }
+</style>
+</html>
