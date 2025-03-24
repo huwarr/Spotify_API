@@ -1,4 +1,4 @@
-# Album and track pf the day
+# Album and track of the day
 
 ### Use case
 
