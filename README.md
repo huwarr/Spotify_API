@@ -1,17 +1,17 @@
-# Альбом и трек дня
+# Album and track pf the day
 
-### Видео с примером использования
+### Use case
 
 https://youtu.be/JE9mlrypul8
 
-### Описание
+### Description
 
-Приложение предлагает пользователю случайные альбом и трек (сингл) из недавне вышедших на площадке Spotify.
+This app provides a user with a random album and track (single) from recent releases on Spotify.
 
-К альбому и треку прилагаются короткие описания (т.е. перечисление наиболее важных характеристик, таких как название, исполнитель и т.п.), картинки с обложек и возможность открыть все это дело в Spotify, кликнув на картинку.
+The album and the track are accompanied with short descriptions (i.e. the most important characteristics, including the title, the author, etc.), a cover picture and a posibilty to redirect to Spotify (by clicking the cover picture).
 
-### Были использованы:
+### Tools used:
 
 - Python + Flask
 - Spotify API
-- HTML + немного CSS
+- HTML + some CSS
